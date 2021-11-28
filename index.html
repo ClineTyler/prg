@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Parcel Sandbox</title>
+    <link rel="dns-prefetch" href="/src/data/in/employee/employee.json" />
+    <link rel="dns-prefetch" href="/src/config.json" />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script> -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id="app"></div>
+      <div class="input_person_test">
+        <input type="file" id="input_test" />
+        <button id="add_person_test">enter</button>
+        <button id="get_PersonList_test">print list</button>
+      </div>
+
+      <div class="input_person">
+        <input id="input" type="text" placeholder="first name last name" />
+        <input id="input_rank" type="number" placeholder="rank" />
+        <!-- <button id="add_person">add person</button> -->
+        <button id="add_rank">add fields</button>
+        <button id="get_PersonList">print list</button>
+        <button id="get_employees">employee list</button>
+      </div>
+
+      <div class="input_teamA">
+        <input id="teamA" type="text" placeholder="Add person to to team A" />
+        <button id="add_to_teamA">enter</button>
+        <button id="print_teamA_btn">print list</button>
+        <button id="A_remove_teamMember_btn">remove</button>
+      </div>
+
+      <div class="input_teamB">
+        <input id="teamB" type="text" placeholder="Add person to to team B" />
+        <button id="add_to_teamB">enter</button>
+        <button id="print_teamB_btn">print list</button>
+        <button id="B_remove_teamMember_btn">remove</button>
+      </div>
+
+      <div class="input_teamC">
+        <input id="teamC" type="text" placeholder="Add person to to team C" />
+        <button id="add_to_teamC">enter</button>
+        <button id="print_teamC_btn">print list</button>
+        <button id="C_remove_teamMember_btn">remove</button>
+      </div>
+
+      <canvas id="canvas" width="200" height="50"></canvas>
+
+      <script src="./src/engine.js"></script>
+    </div>
+  </body>
+</html>
